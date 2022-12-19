@@ -1,0 +1,62 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body {
+  padding-top: 10vh;
+}
+body>.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right:0;
+  margin-left: 0;
+
+}
+.container-fluid> .row{
+  margin-right: 0;
+margin-left: 0;
+}
+/*container formulario  */
+form{
+  border: 1px solid rgb(93, 124, 181);
+  padding: 1rem;
+}
+.btn{
+  background-color: rgb(93, 124, 181);
+  border-color: rgb(93, 124, 181);
+  color: #fff;
+  --bs-btn-hover-border-color :rgb(93, 124, 181);
+  --bs-btn-hover-color:rgb(93, 124, 181);
+}
+
+/*container resultados  */
+.boxResults{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.boxResults> .total, .m2Totales{
+  border: 1px solid rgb(93, 124, 181);
+  padding: 1rem;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.resDet{
+  width: 40%;
+  height:40px;
+  border: 1px solid coral;
+  /* background-color: coral;
+  opacity: 0.2; */
+  text-align: center;
+  
+ 
+}
+.resDet >p{
+  margin-top: 5px;
+  color: black;
+}
