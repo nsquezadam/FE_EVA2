@@ -32,6 +32,14 @@ form{
   --bs-btn-hover-color:rgb(93, 124, 181);
 }
 
+/* message warning and  events show */
+.warning{
+  border: 0.8px solid rgb(218, 27, 27);
+}
+.show{
+  display: block;
+}
+
 /*container resultados  */
 .boxResults{
 
