@@ -54,13 +54,22 @@ form{
   width: 90%;
   margin-bottom: 1rem;
 }
+.boxResults> .m2Totales{
+  border: 1px solid rgb(93, 124, 181);
+  padding: 1rem;
+  width: 90%;
+  
+  
+
+}
 .resDet{
-  width: 40%;
+  width: 50%;
   height:40px;
   border: 1px solid coral;
   /* background-color: coral;
   opacity: 0.2; */
   text-align: center;
+  flex-direction: row;
   
  
 }

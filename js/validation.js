@@ -99,10 +99,10 @@ $(function () {
   $('#idWidth').on('blur', function () {
         let width =  $('#idWidth').val();
    
-let pattern = new RegExp('^[1-9]+$', 'i');
+let pattern = new RegExp('^[0-9]+$', 'i');
 let message1 = "No puede quedar este campo vacio";
-let message2 = "Solo se permiten numeros mayores a 1 ";
-
+let message2 = "Solo se permiten numeros";
+let message3 = "se debe  ingresar valores mayores a 0";
    
     if(width == null || width.length == 0){
       $('#idWidth').addClass('warning');
@@ -112,6 +112,10 @@ let message2 = "Solo se permiten numeros mayores a 1 ";
       $('#warningWidth').addClass('show').text(message2);
       $('#idWidth').addClass('warning');
       
+    }
+    else if (width == 0 ) {
+      $('#warningWidth').addClass('show').text(message3);
+      $('#idWidth').addClass('warning');
     }
     else{
       $('#warningWidth').removeClass('show').text(message2);
@@ -125,9 +129,10 @@ let message2 = "Solo se permiten numeros mayores a 1 ";
 $(function(){
 $('#idHeigth').on('blur', function () {
   let height =$('#idHeigth').val();
-  let pattern = new RegExp('^[1-9]+$', 'i');
+  let pattern = new RegExp('^[0-9]+$', 'i');
   let message1 = "No puede quedar este campo vacio";
-  let message2 = "Solo se permiten numeros mayores a 1 ";
+  let message2 = "Solo se permiten numeros";
+  let message3 = "se debe  ingresar valores mayores a 0";
   if(height== null || height.length == 0 ){
   $('#idHeigth').addClass('warning');
   $('#warningHeigth').addClass('show').text(message1);
@@ -135,7 +140,12 @@ $('#idHeigth').on('blur', function () {
 }else if(!pattern.test(height)){
   $('#warningHeigth').addClass('show').text(message2);
   $('#idHeigth').addClass('warning');
-}else{
+}
+else if (height == 0 ) {
+  $('#warningHeigth').addClass('show').text(message3);
+  $('#idHeigth').addClass('warning');
+}
+else{
   $('#warningHeigth').removeClass('show').text(message2);
   $('#warningHeigth').removeClass('show').text(message1);
   $('#idHeigth').removeClass('warning');
